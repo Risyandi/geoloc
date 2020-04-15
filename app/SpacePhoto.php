@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class SpacePhoto extends Model
 {
+    /**
+     * create table relation
+     */
     protected $guarded = [];
 
     public function space()
