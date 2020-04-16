@@ -13,6 +13,6 @@ class SpacePhoto extends Model
 
     public function space()
     {
-        return $this->belongsTo(Space::class, 'space_id', 'id');
+        return $this->belongsTo(Space::class, 'spaces_id', 'id');
     }
 }

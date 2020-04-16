@@ -13,7 +13,7 @@ class Space extends Model
      */
     public function photos()
     {
-        return $this->hasMany(SpacePhoto::class, 'space_id', 'id');
+        return $this->hasMany(SpacePhoto::class, 'spaces_id', 'id');
     }
     
     /**
