@@ -87,8 +87,8 @@ if (navigator.geolocation) {
                     );
 
                     // console.log(resultCoord)
-                    inputLat.value = resultCoord.lat;
-                    inputLng.value = resultCoord.lng;
+                    inputLat.value = resultCoord.lat.toFixed(5);
+                    inputLng.value = resultCoord.lng.toFixed(5);
                 }
             }, false);
 
@@ -97,7 +97,7 @@ if (navigator.geolocation) {
         if (window.action == "submit") {
             addDragableMarker(map, behavior)
         }
-        
+
     });
 } else {
     console.error("Geolocation is not supported by this browser!");
