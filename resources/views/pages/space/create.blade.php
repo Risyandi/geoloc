@@ -9,7 +9,7 @@
                 <div class="card-header">Submit My Space</div>
                
                 <div class="card-body">
-                    {!! Form::open(['route' => 'space.store', 'method' => 'posts', 'files' => true]) !!}
+                    {!! Form::open(['route' => 'space.store', 'method' => 'post', 'files' => true]) !!}
                     
                     <div class="form-group">
                         <label for="">Title</label>
@@ -23,12 +23,12 @@
                     
                     <div class="form-group">
                         <label for="">Address</label>
-                        {!! Form::textarea('adresss', null, [
-                            'class' => $errors->has('adresss') ? 'form-control is-valid' : 'form-control',
+                        {!! Form::textarea('address', null, [
+                            'class' => $errors->has('address') ? 'form-control is-valid' : 'form-control',
                             'cols' => "10",
                             'rows' => "3"
                             ]) !!}
-                        @error('adresss')
+                        @error('address')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
